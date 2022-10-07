@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Salad Shop</title>
+  </head>
+  <body>
+    <nav>
+      <header class="background">
+        <h1>yummy saláta café</h1>
+        <p>healthy-eating</p>
+      </header>
+      <span
+        ><article>
+          “your Diet Is A Bank Account. Good Food Choices Are Good Investments.”
+        </article>
+        <hr class="line" />
+        <article>
+          <button class="background border"><a href="#menu">menu</a></button>
+          <button class="background border">
+            <a href="#services">services</a>
+          </button>
+          <button class="background border"><a href="#about">about</a></button>
+          <button class="background border">
+            <a href="#contact">contact-us</a>
+          </button>
+        </article>
+      </span>
+    </nav>
+    <hr class="line" />
+    <main id="menu">
+      <div id="services" class="services background border">
+        <h2>services</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quia,
+          quas ipsa itaque cum labore adipisci porro. Sapiente, velit omnis.
+          Provident dolor libero, odit enim sequi quod est ex voluptatum a
+          reiciendis. Aperiam vero numquam sed enim quae libero, magni quibusdam
+          laudantium saepe cupiditate maxime!
+        </p>
+        <button
+          id="reserve"
+          type="button"
+          onclick="reserve();  return false;"
+          class="background border"
+        >
+          <a href="">reservations</a>
+        </button>
+        <button
+          id="onlineOrders"
+          onclick="onlineOrders() ; return false"
+          class="background border"
+        >
+          <a href="#services">online orders</a>
+        </button>
+        <button class="background border">
+          <a href="#about">deliveries</a>
+        </button>
+        <button class="background border">
+          <a href="#contact">specials</a>
+        </button>
+      </div>
+      <div id="details" class="border display">
+        <fieldset class="services">
+          <label for="name"
+            >name:
+            <input type="text" required placeholder="name" />
+          </label>
+          <label for="date"
+            >date:
+            <input
+              type="text"
+              placeholder="
+          mm/dd/yyyy"
+          /></label>
+
+          <label for="table"
+            >table for:
+            <input type="number" min="1" max="8" placeholder="8" />
+          </label>
+          <button onclick="save()" id="save">submit</button>
+        </fieldset>
+      </div>
+      <div id="orders" class="border display">
+        <fieldset class="services">
+          <label for="name"
+            >name:
+            <input type="text" required placeholder="name" />
+          </label>
+          <label for="date"
+            >address:
+            <input
+              type="text"
+              placeholder="
+    28 Paris Whitecliff"
+              required
+          /></label>
+          <label for="choice"
+            >salad:
+            <select name="choice" id="choice" required>
+              <option value="">select one</option>
+              <option value="1">greek salad</option>
+              <option value="2">Niçoise salad</option>
+              <option value="3">Caesar salad</option>
+              <option value="4">leafy salad</option>
+              <option value="5">Fattoush salad</option>
+            </select>
+          </label>
+          <label for="smoothie"
+            >smoothie:
+            <select name="smoothie" id="smoothie" required>
+              <option value="">select one</option>
+              <option value="1">strawberry Banana</option>
+              <option value="2">blueberry</option>
+              <option value="3">orange almond</option>
+              <option value="4">peanut butter banana</option>
+              <option value="5">apple carrot beet</option>
+            </select>
+          </label>
+          <label for="snacks"
+            >snacks:
+            <select name="snacks" id="snacks" required>
+              <option value="">select one</option>
+              <option value="1">olives</option>
+              <option value="2">almonds</option>
+              <option value="3">peanuts</option>
+              <option value="4">sunflower seeds</option>
+              <option value="5">cashews</option>
+              <option value="6">hazelnuts</option>
+            </select>
+          </label>
+          <button onclick="save()" id="save">submit</button>
+        </fieldset>
+      </div>
+      <div class="one">
+        <h2><u>salads main</u></h2>
+        <p id="greekSalad">Greek Salad</p>
+        <p>$3.20</p>
+        <p id="nicoiseSalad">Niçoise Salad</p>
+        <p>$4.20</p>
+        <p id="ceaserSalad">Caesar Salad</p>
+        <p>$3.56</p>
+        <p id="leafySalad">Leafy Green Salad</p>
+        <p>$3.00</p>
+        <p id="fattoushSalad">Fattoush</p>
+        <p>$3.00</p>
+      </div>
+
+      <div class="two">
+        <h2>smoothie booth</h2>
+        <p>Strawberry Banana Smoothie:</p>
+        <p>$3.20</p>
+        <p>Blueberry Smoothie:</p>
+        <p>$3.20</p>
+        <p>Almond Orange Smoothie:</p>
+        <p>$3.20</p>
+        <p>Peanut butter banana smoothie:</p>
+        <p>$3.20</p>
+        <p>Apple Carrot Beet Smoothie:</p>
+        <p>$3.20</p>
+      </div>
+      <div class="three">
+        <h2>snacks</h2>
+        <p>~hazelnuts~</p>
+        <p>$1.20</p>
+        <p>~cashews~</p>
+        <p>$1.00</p>
+        <p>~almonds~</p>
+        <p>$1.90</p>
+        <p>~peanuts~</p>
+        <p>$2.50</p>
+        <p>~sunflower seeds~</p>
+        <p>$1.20</p>
+        <p>~olives~</p>
+        <p>$2.20</p>
+      </div>
+    </main>
+    <div id="about" class="services background border">
+      <h2>about us</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perferendis
+        magnam minus? Id nisi, cum consequuntur, atque eius fuga nemo ut,
+        necessitatibus voluptate optio vero eligendi quos! Reprehenderit quo
+        repellendus rerum. Necessitatibus animi unde inventore porro eaque rerum
+        consequuntur, reiciendis voluptatibus esse in quae voluptatum omnis
+        asperiores iusto exercitationem fugiat.
+      </p>
+    </div>
+    <footer id="contact" class="background border">
+      <article>
+        <h2><u>Shops</u></h2>
+        <p>Avondale</p>
+        <p>Whitecliff</p>
+      </article>
+      <article>
+        <h2><u> Contact</u></h2>
+        <p>
+          <a
+            href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+            target="_blank"
+            >Email: info@salatacafe.co.zw</a
+          >
+        </p>
+        <p><a href=""> Tel: +263 771 13 6936</a></p>
+      </article>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

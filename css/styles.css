@@ -1,0 +1,139 @@
+body {
+  background-image: url(../img/pexels-karolina-grabowska-4033037.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin: 10%;
+}
+.background {
+  background-color: #8080807d;
+}
+header {
+  width: fit-content;
+  height: 150px;
+  padding: 10px;
+  border-radius: 60%;
+  font-size: x-large;
+  border: 5px double green;
+}
+label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  width: 40%;
+  min-height: 300px;
+
+  border: 5px solid green;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 30%;
+}
+.hidden {
+  display: none;
+}
+.border {
+  border: 1px solid green;
+}
+.services {
+  width: 100%;
+  min-height: fit-content;
+  border: 0ch;
+}
+fieldset {
+  margin: auto;
+  text-align: left;
+}
+input,
+select {
+  width: 80%;
+  background-color: rgb(236, 172, 172);
+}
+span {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px;
+  font-style: italic;
+  margin-top: auto;
+}
+.line {
+  width: 100%;
+  height: 2px;
+}
+
+nav {
+  display: flex;
+  margin-top: -40px;
+  justify-content: space-between;
+}
+h1,
+h2,
+p {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.display {
+  display: none;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 10px auto;
+  min-height: 60px;
+  border-radius: 10px;
+}
+.one {
+  background-image: url(../img/pexels-scott-webb-311458.jpg);
+  background-size: cover;
+}
+.two {
+  margin: 10px auto;
+  background-image: url(../img/pexels-cottonbro-6544065.jpg);
+  background-size: cover;
+}
+.three {
+  margin-left: 60%;
+  background-image: url(../img/pexels-vie-studio-7421519.jpg);
+  background-size: cover;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  margin: 0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: small;
+  }
+  div,
+  footer,
+  .services,
+  .three,
+  .display {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    font-size: small;
+  }
+}
