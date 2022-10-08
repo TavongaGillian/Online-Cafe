@@ -3,14 +3,14 @@ body {
   background-position: center;
   background-size: cover;
   text-align: center;
-  margin: 10%;
+  margin: 0 10%;
 }
 .background {
   background-color: #8080807d;
 }
 header {
   width: fit-content;
-  height: 150px;
+  height: fit-content;
   padding: 10px;
   border-radius: 60%;
   font-size: x-large;
@@ -57,7 +57,7 @@ fieldset {
 input,
 select {
   width: 80%;
-  background-color: rgb(236, 172, 172);
+  background-color: rgb(207, 229, 207);
 }
 span {
   display: flex;
@@ -74,7 +74,6 @@ span {
 
 nav {
   display: flex;
-  margin-top: -40px;
   justify-content: space-between;
 }
 h1,
@@ -95,18 +94,16 @@ p {
   border-radius: 10px;
 }
 .one {
-  background-image: url(../img/pexels-scott-webb-311458.jpg);
-  background-size: cover;
+  background-color: rgb(70 156 70 / 41%);
 }
 .two {
   margin: 10px auto;
-  background-image: url(../img/pexels-cottonbro-6544065.jpg);
-  background-size: cover;
+  /*background-image: url(../img/pexels-cottonbro-6544065.jpg);
+  background-size: cover;*/
 }
 .three {
   margin-left: 60%;
-  background-image: url(../img/pexels-vie-studio-7421519.jpg);
-  background-size: cover;
+  background-color: rgb(70 156 70 / 41%);
 }
 
 footer {
@@ -129,6 +126,10 @@ footer {
   .display {
     width: 80%;
     margin: 10px auto;
+  }
+  button {
+    width: 70px;
+    margin: 1px;
   }
 }
 
