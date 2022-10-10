@@ -8,16 +8,16 @@
     <title>Salad Shop</title>
   </head>
   <body>
-    <nav>
-      <header class="background">
-        <h1>yummy saláta café</h1>
+    <nav class="display-flex">
+      <header class="background header">
+        <h1 class="font-style">yummy saláta café</h1>
         <p>healthy-eating</p>
       </header>
-      <span
+      <span class="display-flex span-style"
         ><article>
           “your Diet Is A Bank Account. Good Food Choices Are Good Investments.”
         </article>
-        <hr class="line" />
+        <hr class="line width-100" />
         <article>
           <button class="background border"><a href="#menu">menu</a></button>
           <button class="background border">
@@ -32,9 +32,9 @@
     </nav>
     <hr class="line" />
     <main id="menu">
-      <div id="services" class="services background border">
+      <div id="services" class="container border-0 background border width-100">
         <h2>services</h2>
-        <p>
+        <p class="font-style">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quia,
           quas ipsa itaque cum labore adipisci porro. Sapiente, velit omnis.
           Provident dolor libero, odit enim sequi quod est ex voluptatum a
@@ -63,13 +63,13 @@
           <a href="#contact">specials</a>
         </button>
       </div>
-      <div id="details" class="border display">
-        <fieldset class="services">
-          <label for="name"
+      <div id="details" class="container border display-none">
+        <fieldset class="border-0">
+          <label for="name" class="displa-flex width-100"
             >name:
             <input type="text" required placeholder="name" />
           </label>
-          <label for="date"
+          <label for="date" class="displa-flex width-100"
             >date:
             <input
               type="text"
@@ -77,20 +77,20 @@
           mm/dd/yyyy"
           /></label>
 
-          <label for="table"
+          <label for="table" class="displa-flex width-100"
             >table for:
             <input type="number" min="1" max="8" placeholder="8" />
           </label>
           <button onclick="save()" id="save">submit</button>
         </fieldset>
       </div>
-      <div id="orders" class="border display">
-        <fieldset class="services">
-          <label for="name"
+      <div id="orders" class="container border display-none">
+        <fieldset class="border-0">
+          <label for="name" class="display-flex width-100"
             >name:
             <input type="text" value="name" required placeholder="name" />
           </label>
-          <label for="date"
+          <label for="date" class="display-flex width-100"
             >address:
             <input
               type="text"
@@ -98,7 +98,7 @@
     28 Paris Whitecliff"
               required
           /></label>
-          <label for="choice"
+          <label for="choice" class="display-flex width-100"
             >salad:
             <select name="choice" id="choice" required>
               <option value="">select one</option>
@@ -109,7 +109,7 @@
               <option value="5">Fattoush salad</option>
             </select>
           </label>
-          <label for="smoothie"
+          <label for="smoothie" class="display-flex width-100"
             >smoothie:
             <select name="smoothie" id="smoothie" required>
               <option value="">select one</option>
@@ -120,7 +120,7 @@
               <option value="5">apple carrot beet</option>
             </select>
           </label>
-          <label for="snacks"
+          <label for="snacks" class="display-flex width-100"
             >snacks:
             <select name="snacks" id="snacks" required>
               <option value="">select one</option>
@@ -135,51 +135,51 @@
           <button onclick="save()" id="save">submit</button>
         </fieldset>
       </div>
-      <div class="one">
-        <h2><u>salads main</u></h2>
-        <p id="greekSalad">Greek Salad</p>
-        <p>$3.20</p>
-        <p id="nicoiseSalad">Niçoise Salad</p>
-        <p>$4.20</p>
-        <p id="ceaserSalad">Caesar Salad</p>
-        <p>$3.56</p>
-        <p id="leafySalad">Leafy Green Salad</p>
-        <p>$3.00</p>
-        <p id="fattoushSalad">Fattoush</p>
-        <p>$3.00</p>
+      <div class="container background-green">
+        <h2 class="font-style"><u>salads main</u></h2>
+        <p class="font-style" id="greekSalad">Greek Salad</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style" id="nicoiseSalad">Niçoise Salad</p>
+        <p class="font-style">$4.20</p>
+        <p class="font-style" id="ceaserSalad">Caesar Salad</p>
+        <p class="font-style">$3.56</p>
+        <p class="font-style" id="leafySalad">Leafy Green Salad</p>
+        <p class="font-style">$3.00</p>
+        <p class="font-style" id="fattoushSalad">Fattoush</p>
+        <p class="font-style">$3.00</p>
       </div>
 
-      <div class="two">
-        <h2>smoothie booth</h2>
-        <p>Strawberry Banana Smoothie:</p>
-        <p>$3.20</p>
-        <p>Blueberry Smoothie:</p>
-        <p>$3.20</p>
-        <p>Almond Orange Smoothie:</p>
-        <p>$3.20</p>
-        <p>Peanut butter banana smoothie:</p>
-        <p>$3.20</p>
-        <p>Apple Carrot Beet Smoothie:</p>
-        <p>$3.20</p>
+      <div class="container two margin-auto">
+        <h2 class="font-style">smoothie booth</h2>
+        <p class="font-style">Strawberry Banana Smoothie:</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style">Blueberry Smoothie:</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style">Almond Orange Smoothie:</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style">Peanut butter banana smoothie:</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style">Apple Carrot Beet Smoothie:</p>
+        <p class="font-style">$3.20</p>
       </div>
-      <div class="three">
-        <h2>snacks</h2>
-        <p>~hazelnuts~</p>
-        <p>$1.20</p>
-        <p>~cashews~</p>
-        <p>$1.00</p>
-        <p>~almonds~</p>
-        <p>$1.90</p>
-        <p>~peanuts~</p>
-        <p>$2.50</p>
-        <p>~sunflower seeds~</p>
-        <p>$1.20</p>
-        <p>~olives~</p>
-        <p>$2.20</p>
+      <div class="container margin-left background-green">
+        <h2 class="font-style">snacks</h2>
+        <p class="font-style">~hazelnuts~</p>
+        <p class="font-style">$1.20</p>
+        <p class="font-style">~cashews~</p>
+        <p class="font-style">$1.00</p>
+        <p class="font-style">~almonds~</p>
+        <p class="font-style">$1.90</p>
+        <p class="font-style">~peanuts~</p>
+        <p class="font-style">$2.50</p>
+        <p class="font-style">~sunflower seeds~</p>
+        <p class="font-style">$1.20</p>
+        <p class="font-style">~olives~</p>
+        <p class="font-style">$2.20</p>
       </div>
     </main>
-    <div id="about" class="services background border">
-      <h2>about us</h2>
+    <div id="about" class="container border-0 background border width-100">
+      <h2 class="font-style">about us</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perferendis
         magnam minus? Id nisi, cum consequuntur, atque eius fuga nemo ut,
@@ -189,22 +189,22 @@
         asperiores iusto exercitationem fugiat.
       </p>
     </div>
-    <footer id="contact" class="background border">
+    <footer id="contact" class="background display-flex">
       <article>
-        <h2><u>Shops</u></h2>
-        <p>Avondale</p>
-        <p>Whitecliff</p>
+        <h2 class="font-style"><u>Shops</u></h2>
+        <p class="font-style">Avondale</p>
+        <p class="font-style">Whitecliff</p>
       </article>
       <article>
-        <h2><u> Contact</u></h2>
-        <p>
+        <h2 class="font-style"><u> Contact</u></h2>
+        <p class="font-style">
           <a
             href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
             target="_blank"
             >Email: info@salatacafe.co.zw</a
           >
         </p>
-        <p><a href=""> Tel: +263 771 13 6936</a></p>
+        <p class="font-style"><a href=""> Tel: +263 771 13 6936</a></p>
       </article>
     </footer>
     <script src="./js/main.js"></script>
