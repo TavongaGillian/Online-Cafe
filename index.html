@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav class="display-flex">
-      <header class="background header">
+      <header class="background-gray header">
         <h1 class="font-style">yummy saláta café</h1>
         <p>healthy-eating</p>
       </header>
@@ -19,12 +19,16 @@
         </article>
         <hr class="line width-100" />
         <article>
-          <button class="background border"><a href="#menu">menu</a></button>
-          <button class="background border">
+          <button class="background-gray border-1px-green">
+            <a href="#menu">menu</a>
+          </button>
+          <button class="background-gray border-1px-green">
             <a href="#services">services</a>
           </button>
-          <button class="background border"><a href="#about">about</a></button>
-          <button class="background border">
+          <button class="background-gray border-1px-green">
+            <a href="#about">about</a>
+          </button>
+          <button class="background-gray border-1px-green">
             <a href="#contact">contact-us</a>
           </button>
         </article>
@@ -32,7 +36,10 @@
     </nav>
     <hr class="line" />
     <main id="menu">
-      <div id="services" class="container border-0 background border width-100">
+      <div
+        id="services"
+        class="container border-1px-green-0 background-gray width-100"
+      >
         <h2>services</h2>
         <p class="font-style">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quia,
@@ -45,25 +52,25 @@
           id="reserve"
           type="button"
           onclick="reserve();  return false;"
-          class="background border"
+          class="background-gray border-1px-green"
         >
           <a href="">reservations</a>
         </button>
         <button
           id="onlineOrders"
           onclick="onlineOrders() ; return false"
-          class="background border"
+          class="background-gray border-1px-green"
         >
           <a href="#services">online orders</a>
         </button>
-        <button class="background border">
+        <button class="background-gray border-1px-green">
           <a href="#about">deliveries</a>
         </button>
-        <button class="background border">
+        <button class="background-gray border-1px-green">
           <a href="#contact">specials</a>
         </button>
       </div>
-      <div id="details" class="container border display-none">
+      <div id="details" class="container border-1px-green display-none">
         <fieldset class="border-0">
           <label for="name" class="displa-flex width-100"
             >name:
@@ -84,7 +91,7 @@
           <button onclick="save()" id="save">submit</button>
         </fieldset>
       </div>
-      <div id="orders" class="container border display-none">
+      <div id="orders" class="container border-1px-green display-none">
         <fieldset class="border-0">
           <label for="name" class="display-flex width-100"
             >name:
@@ -178,7 +185,10 @@
         <p class="font-style">$2.20</p>
       </div>
     </main>
-    <div id="about" class="container border-0 background border width-100">
+    <div
+      id="about"
+      class="container border-0 background-gray border-1px-green width-100"
+    >
       <h2 class="font-style">about us</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perferendis
@@ -189,7 +199,7 @@
         asperiores iusto exercitationem fugiat.
       </p>
     </div>
-    <footer id="contact" class="background display-flex footer">
+    <footer id="contact" class="background-gray display-flex footer">
       <article>
         <h2 class="font-style"><u>Shops</u></h2>
         <p class="font-style">Avondale</p>
