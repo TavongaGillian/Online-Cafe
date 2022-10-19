@@ -109,15 +109,15 @@ select {
   border-bottom-right-radius: 25px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   body {
     font-size: small;
   }
   div,
-  footer,
+  .footer,
   .services,
   .margin-left,
-  .display {
+  .container {
     width: 80%;
     margin: 10px auto;
   }
@@ -131,8 +131,9 @@ select {
   }
 }
 
-@media screen and (max-width: 750px) {
-  header {
+@media screen and (max-width: 992px) {
+  body {
     font-size: small;
+    font-family: cursive;
   }
 }
